@@ -1,0 +1,41 @@
+.first-block {
+    height: 350px;
+}
+
+.check-section-header {
+    display: flex;
+    justify-content: center;
+}
+
+.check-section-header p {
+    font-size: 30px;
+}
+
+.home-rec-img img{
+    height: 200px;
+}
+
+.home-rec-text p {
+    font-size: 22px;
+}
+
+.second-block {
+    display:inline;
+}
+
+.books-img img {
+    height: 80px;
+    display: inline-flex;
+}
+
+.movie-img img {
+    height: 80px;
+}
+
+.books-section, .movie-section {
+    display: flex;
+}
+
+.book-content p, .movie-content p {
+    font-size: 20px;
+}

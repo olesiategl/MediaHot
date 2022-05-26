@@ -1,0 +1,77 @@
+.single-book-card {
+    padding: 20px;
+    background-color: #343444;
+    border-radius: 10px;
+}
+
+.book-img img {
+    border-radius: 10px;
+    height: 400px;
+}
+
+.book-img {
+    margin-bottom: 15px;
+}
+
+.book-title {
+    margin-bottom: 15px;
+}
+
+.book-title a {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.book-title a:hover {
+    color: #fff;
+}
+
+.author-info h6 {
+    font-size: 0.7rem;
+    color: #fff;
+    opacity: 80%;
+    margin-bottom: 0;
+    font-weight: 300px;
+}
+
+.author-info p {
+    font-size: 0.9rem;
+    color: #fff;
+    opacity: 100%;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.books-section-top h3 {
+    color: #fff;
+}
+
+.books-section-top span a {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid #5142fc;
+}
+
+.add-to-cart-btn {
+    padding: 7px 25px;
+    border: 1px solid #5142fc;
+    border-radius: 50px;
+    background: #343444;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.add-to-cart-btn span i {
+    color: #fff;
+}
+
+.add-to-cart-btn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.add-to-cart-btn a:hover {
+    color: #fff;
+}
