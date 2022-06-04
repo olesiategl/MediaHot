@@ -8,20 +8,20 @@ import './footer.css'
 
 const MY_ACCOUNT = [
   {
-    display: 'Author Profile',
-    url: '/seller-profile'
+    display: 'Books',
+    url: '/books'
   },
   {
-    display: 'Create Item',
-    url: '/create'
+    display: 'Movies',
+    url: '/movies'
   },
   {
-    display: 'Collection',
-    url: '/market'
+    display: 'Hot',
+    url: '/hot'
   },
   {
-    display: 'Edit Profile',
-    url: '/edit-profile'
+    display: 'Sign In',
+    url: '/signIn'
   },
 ]
 
@@ -47,7 +47,7 @@ const RESOURCES = [
 const COMPANY = [
   {
     display: 'About',
-    url: '#'
+    url: '/about'
   },
   {
     display: 'Career',
@@ -76,8 +76,8 @@ const Footer = () => {
             Media-Map
             </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ullam
-              nihil dolor suscipit nesciunt soluta incidunt pariatur autem obcaecati.
+            Watch, read and enjoy more of your favorite books or movies. Join Media Map, 
+            the greatest online community for people of culture like you!
             </p>
         </div>
         </Col>

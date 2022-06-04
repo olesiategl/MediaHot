@@ -9,11 +9,19 @@
     padding: 0 8px;
   }
   
-  .card {
+  .column .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 2px;
+    padding: 2rem;
+    background: #343444 !important;
+    border-radius: 10px;
   }
-  
+
+
+  .column .card img {
+    border-radius: 7px;
+  }
+
   .about-section {
     padding: 50px;
     text-align: center;
@@ -25,14 +33,14 @@
     padding: 0 10px;
   }
 
-  .about-content h2 {
-    color: #000;
+  .about-content h4 {
+    color: #fff;
     text-align: center;
 
   }
 
   .about-content p {
-    color: #000;
+    color: #fff;
     text-align: center;
   }
 
@@ -45,34 +53,67 @@
   .title {
     color: grey;
   }
+
+  .about-memder-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
-  .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
+  .about-memder-social a{
+    position: relative;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
     color: #fff;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
+    padding: 15px;
+  }
+
+  .about-memder-social a i{
+    color: #fff;
+    transition: .4s linear;
+  }
+
+  .about-memder-social a::before, 
+  .about-memder-social a::after{
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
     width: 100%;
-    transition: 0.3s;
+    height: 100%;
+    left: 0;
+    right: 0;
+    transition: .4s linear;
   }
 
-  .button a {
-    text-decoration: none;
-    color: #fff;
-  }
+  .about-memder-social a:hover:before{
+    border-radius: 50%;
+    border-left: 4px solid;
+    border-right: 4px solid;
+    transform: skewX(20deg);
+    /* color: #fff; */
+    color: #e250e5;
   
-  .button a:hover {
-    text-decoration: none;
-    color: #fff;
   }
 
-  .button:hover {
-    background-color: #555;
+  .about-memder-social a:hover::after{
+    border-radius: 50%;
+    border-left: 4px solid;
+    border-right: 4px solid;
+    transform: skewY(-20deg);
+    /* color: #fff; */
+    color: #4b50e5;
   }
-  
+
+
+
   @media screen and (max-width: 650px) {
     .column {
       width: 100%;

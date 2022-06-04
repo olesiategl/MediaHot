@@ -7,7 +7,7 @@ import { MOVIE__DATA } from '../assets/data/data'
 
 import '../styles/book-details.css'
 
-import BooksSection from '../components/ui/BooksSection/BooksSection'
+import MoviesSection from '../components/ui/MoviesSection/MoviesSection'
 
 import { Link } from 'react-router-dom'
 
@@ -69,7 +69,7 @@ const MoviesDetails = () => {
             <div className="book-price d-flex align-items-center gap-3 mt-4">
               <div className='price-detail'>
                 <p>Main actors: </p>
-                <h6>{singleItem.actors}$</h6>
+                <h6>{singleItem.actors}</h6>
               </div>
             </div>
 
@@ -85,7 +85,7 @@ const MoviesDetails = () => {
     </Container>
   </section>
 
-  <BooksSection/>
+  <MoviesSection/>
   </>
 }
 

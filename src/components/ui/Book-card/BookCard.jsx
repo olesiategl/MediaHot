@@ -16,7 +16,7 @@ const BookCard = (props) => {
     </div>
 
     <div className="book-content">
-        <h5 className='book-title'><Link to = {'/books/' + {id}}>{title}</Link></h5>
+        <h5 className='book-title'><Link to = {`/books/${id}`}>{title}</Link></h5>
     </div>
 
     <div className="author-info w-100 d-flex align-items-center justify-content-between">

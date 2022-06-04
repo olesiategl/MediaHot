@@ -6,7 +6,6 @@ import '../styles/about.css'
 import about_img1 from '../assets/images/about_img1.jpg'
 import about_img2 from '../assets/images/about_img2.jpg'
 import about_img3 from '../assets/images/about_img3.jpg'
-import { Link } from 'react-router-dom'
 
 
 
@@ -20,12 +19,14 @@ const About = () => {
                 <Col lg='3' className='column'>
                     <div class="card">
                         <img src={about_img1} alt="Jane"/>
-                        <div class="about-content">
-                            <h2>Olesia Tehlivets</h2>
+                        <div class="about-content mt-4">
+                            <h4>Olesia Tehlivets</h4>
                             <p class="title">Frontend Developer</p>
-                            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                            <p>olesia@example.com</p>
-                            <p><button class="button"><Link to='/contact'>Contact</Link></button></p>
+                        </div>
+                        <div class='about-memder-social text-center'>
+                            <a href='#' target='_blank'><i class = 'ri-instagram-line'></i></a>
+                            <a href='#' target='_blank'><i class = 'ri-twitter-line'></i></a>
+                            <a href='#' target='_blank'><i class = 'ri-telegram-line'></i></a>
                         </div>
                     </div>
                 </Col>
@@ -33,12 +34,14 @@ const About = () => {
                 <Col lg='3' className='column'>
                     <div class="card">
                         <img src={about_img2} alt="Mike"/>
-                        <div class="about-content">
-                            <h2>Nestor Zasymenko</h2>
+                        <div class="about-content mt-4">
+                            <h4>Nestor Zasymenko</h4>
                             <p class="title">Project Manager</p>
-                            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                            <p>nestor@example.com</p>
-                            <p><button class="button"><Link to='/contact'>Contact</Link></button></p>
+                        </div>
+                        <div class='about-memder-social text-center'>
+                            <a href='#' target='_blank'><i class = 'ri-instagram-line'></i></a>
+                            <a href='#' target='_blank'><i class = 'ri-twitter-line'></i></a>
+                            <a href='#' target='_blank'><i class = 'ri-telegram-line'></i></a>
                         </div>
                     </div>
                 </Col>
@@ -46,12 +49,14 @@ const About = () => {
                 <Col lg='3' className='column'>
                     <div class="card">
                         <img src={about_img3} alt="John"/>
-                        <div class="about-content">
-                            <h2>Pavlo Melnyk</h2>
+                        <div class="about-content mt-4">
+                            <h4>Pavlo Melnyk</h4>
                             <p class="title">Backend Developer</p>
-                            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                            <p>pavlo@example.com</p>
-                            <p><button class="button"><Link to='/contact'>Contact</Link></button></p>
+                        </div>
+                        <div class='about-memder-social text-center'>
+                            <a href='#' target='_blank'><i class = 'ri-instagram-line'></i></a>
+                            <a href='#' target='_blank'><i class = 'ri-twitter-line'></i></a>
+                            <a href='#' target='_blank'><i class = 'ri-telegram-line'></i></a>
                         </div>
                     </div>
                 </Col>
@@ -59,12 +64,14 @@ const About = () => {
                 <Col lg='3' className='column'>
                     <div class="card">
                         <img src={about_img1} alt="John"/>
-                        <div class="about-content">
-                            <h2>Sofia Dochylo</h2>
+                        <div class="about-content mt-4">
+                            <h4>Sofia Dochylo</h4>
                             <p class="title">Designer</p>
-                            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                            <p>sofia@example.com</p>
-                            <p><button class="button"><Link to='/contact'>Contact</Link></button></p>
+                        </div>
+                        <div class='about-memder-social text-center'>
+                            <a href='#' target='_blank'><i class = 'ri-instagram-line'></i></a>
+                            <a href='#' target='_blank'><i class = 'ri-twitter-line'></i></a>
+                            <a href='#' target='_blank'><i class = 'ri-telegram-line'></i></a>
                         </div>
                     </div>
                 </Col>

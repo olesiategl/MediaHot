@@ -86,6 +86,11 @@ const Header = () => {
         </div>
 
         <div className="nav-right d-flex align-items-center gap-5">
+
+        <button className='btn d-flex gap-2 align-items-center'>
+          <Link to = {'/signIn'}><i class="ri-heart-add-fill"></i></Link>  
+        </button>
+
           <button className='btn d-flex gap-2 align-items-center'>
             <span>
               <i class = 'ri-login-circle-line'></i>

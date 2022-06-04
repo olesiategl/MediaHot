@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import CommonBookSection from '../components/ui/Common-book-section/CommonBookSection'
 
-import BookCard from '../components/ui/Book-card/BookCard'
+import MovieCard from '../components/ui/Movie-card/MovieCard'
 
 import { MOVIE__DATA } from '../assets/data/data'
 
@@ -12,9 +12,28 @@ import '../styles/books.css'
 
 const Movies = () => {
 
-  const handleCategory = () => {
+  const [name, setName] = useState('');
 
-  }
+  // the search result
+  const [foundUsers, setFoundUsers] = useState(MOVIE__DATA);
+
+  const filter = (e) => {
+    const keyword = e.target.value;
+
+    if (keyword !== '') {
+      const results = MOVIE__DATA.filter((user) => {
+        return user.title.toLowerCase().startsWith(keyword.toLowerCase());
+        // Use the toLowerCase() method to make it case-insensitive
+      });
+      setFoundUsers(results);
+    } else {
+      setFoundUsers(MOVIE__DATA);
+      // If the text field is empty, show all users
+    }
+
+    setName(keyword);
+  };
+
   return <>
     <CommonBookSection title = 'Movies'/>
 
@@ -22,36 +41,22 @@ const Movies = () => {
       <Container>
         <Row>
           <Col lg = '12' className='mb-5'> 
-            <div className="books-filter d-flex align-items-center">
-              <div className="filter-left d-flex align-items-center gap-5">
-                <div className="all-books-filter">
-                  <select onChange={handleCategory}>
-                    <option>All books types</option>
-                    <option value="classics">Classics</option>
-                    <option value="horror">Horror</option>
-                    <option value="fantasy">Fantasy</option>
-                    <option value="thrillers">Thrillers</option>
-                    <option value="autobiographies">Autobiographies</option>
-                    <option value="history">History</option>
-                    <option value="poetry">Poetry</option>
-                    <option value="selfHelp">Self-Help</option>
-                    <option value="essays">Essays</option>
-                  </select>
-                </div>
-
+              <div className='book-seach d-flex align-items-center'>
+                <i class="ri-search-2-line"></i>
+                <input className='seach' type="text" value={name} onChange={filter} placeholder="Search for titles.."/>
               </div>
 
-              <div className="filter-right"></div>
-            </div>
           </Col>
 
-          {
-            MOVIE__DATA.map(item =>(
-              <Col lg = '3' mb = '4' sm = '6' className='mb-4' key={item}>
-                <BookCard item = {item}/>
-              </Col>
+          {foundUsers && foundUsers.length > 0 ? (
+            foundUsers.map((item) => (
+            <Col lg = '3' mb = '4' sm = '6' className='mb-4' key={item.id}>
+              <MovieCard item = {item}/>
+            </Col>
             ))
-          }
+          ) : (
+            <h1>No results found!</h1>
+          )}
         </Row>
       </Container>
     </section>

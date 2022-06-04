@@ -7,6 +7,7 @@ import book1 from '../../../assets/images/book1.jpg'
 import book2 from '../../../assets/images/book2.jpg'
 import book3 from '../../../assets/images/book3.jpg'
 import batman1 from '../../../assets/images/batman1.jpg'
+import { Link } from 'react-router-dom'
 
 
 
@@ -24,13 +25,13 @@ const checkOut = () => {
                 </div>
                     
                 <div className='home-rec-text'>
-                    <p>The 10 Best TV Shows And Where To Watch Them</p>
+                    <Link to='#'>The 10 Best TV Shows And Where To Watch Them</Link>
                 </div>
             </div>
 
           </Col>
 
-          <Col lg = '2' className='mt-4'>
+          <Col lg = '2' className='check-container mt-4'>
             <div className='books-img'>
                 <img src={book1} alt="" />
                 <img src={book2} alt="" />
@@ -43,7 +44,7 @@ const checkOut = () => {
 
           </Col>
         
-          <Col className='mt-4'>
+          <Col className='mt-4 check-container'>
             <div className="second-block">
                 <div className="books-section">
                     <div className="book-content">

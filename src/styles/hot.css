@@ -1,0 +1,17 @@
+.hot-header {
+    color: #fff;
+}
+
+.hot-book {
+    display: flex;
+    padding-right: 5px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+
+}
+
+.hot-book .child {
+    margin-right: 15px;
+    margin-bottom: 10px;
+}

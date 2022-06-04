@@ -8,6 +8,14 @@
     font-size: 2.5rem;
 }
 
+.hero-container {
+    background: #343444;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 3px 3px 6px -3px #e250e5;
+    border-radius: 5px;
+}
+
 .btn-text {
     font-size: 18px;
     font-weight: bold;

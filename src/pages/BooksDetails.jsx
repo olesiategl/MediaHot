@@ -17,6 +17,10 @@ const BooksDetails = () => {
 
   const singleItem = BOOK__DATA.find(item => item.id === id);
 
+  const handleAddToCart = (item) => {
+  
+  }
+
 
   return <>
   <CommonBookSection title={singleItem.title}/>

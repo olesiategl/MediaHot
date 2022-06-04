@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'reactstrap'
 import { Link } from 'react-router-dom'
-import BookCard from '../Book-card/BookCard'
+import MovieCard from '../Movie-card/MovieCard'
 import { MOVIE__DATA } from '../../../assets/data/data.js'
 
 import './movies-section.css'
@@ -20,7 +20,7 @@ const MoviesSection = () => {
                 {
                     MOVIE__DATA.slice(0, 4).map((item) =>(
                         <Col lg = '3'>
-                            <BookCard key = {item.id} item = {item}/>
+                            <MovieCard key = {item.id} item = {item}/>
                         </Col>
                     ))
                 }

@@ -2,6 +2,12 @@
     height: 350px;
 }
 
+.check-container {
+    background: #343444;
+    padding-top: 10px;
+    height: 230px;
+}
+
 .check-section-header {
     display: flex;
     justify-content: center;
@@ -15,8 +21,15 @@
     height: 200px;
 }
 
-.home-rec-text p {
+.home-rec-text a {
+    color: #fff;
+    text-decoration: none;
     font-size: 22px;
+}
+
+.home-rec-text a:hover {
+    color: #fff;
+    text-decoration: none;
 }
 
 .second-block {

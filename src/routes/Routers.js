@@ -12,6 +12,8 @@ import Movies from '../pages/Movies'
 import SignIn from '../pages/SignIn'
 import SignUp from '../pages/SignUp'
 import About from '../pages/About'
+import Cart from '../pages/Cart'
+
 
 
 
@@ -23,12 +25,13 @@ const Routers = () => {
         <Route path='/hot' element = {<Hot/>}/>
         <Route path='/books' element = {<Books/>}/>
         <Route path='/movies' element = {<Movies/>}/>
-        <Route path='/books/:id' element = {<BooksDetails/>}/>
-        <Route path='/movies/:id' element = {<MoviesDetails/>}/>
+        <Route path='/books/:id' element = {<BooksDetails />}/>
+        <Route path='/movies/:id' element = {<MoviesDetails />}/>
         <Route path='/contact' element = {<Contact/>}/>
         <Route path='/signIn' element = {<SignIn/>}/>
         <Route path='/signUp' element = {<SignUp/>}/>
         <Route path='/about' element = {<About/>}/>
+        <Route path='/cart' element = {<Cart/>}/>
     </Routes>
   )
 }

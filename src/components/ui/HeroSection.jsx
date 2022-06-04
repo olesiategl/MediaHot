@@ -7,7 +7,7 @@ import pic_home from '../../assets/images/pic_home.jpeg'
 
 const HeroSection = () => {
   return <section className="hero-section">
-      <Container>
+      <Container className='hero-container'>
           <Row>
               <Col lg = '6' md = '6'>
                 <div className="hero-content">
