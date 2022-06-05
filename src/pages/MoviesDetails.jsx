@@ -76,7 +76,7 @@ const MoviesDetails = () => {
             <p className='my-4'>{singleItem.desc}</p>
             <button className='add-cart-btn d-flex align-items-center gap-2 w-100'>
               <i class="ri-add-fill"></i>
-              <Link to='/signIn'>Wahchlist</Link>
+              <Link to='/signIn'>Watchlist</Link>
             </button>
 
           </div>

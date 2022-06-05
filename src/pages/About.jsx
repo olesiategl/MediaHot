@@ -3,9 +3,11 @@ import { Container, Row, Col } from 'reactstrap'
 import CommonBookSec from '../components/ui/Common-book-section/CommonBookSection'
 
 import '../styles/about.css'
-import about_img1 from '../assets/images/about_img1.jpg'
-import about_img2 from '../assets/images/about_img2.jpg'
-import about_img3 from '../assets/images/about_img3.jpg'
+import about_img1 from '../assets/images/photo_sofia.jpeg'
+import about_img2 from '../assets/images/photo_nestor.jpeg'
+import about_img3 from '../assets/images/photo_pasha.jpg'
+import about_img4 from '../assets/images/photo_olesia.jpeg'
+
 
 
 
@@ -18,7 +20,7 @@ const About = () => {
             <Row>
                 <Col lg='3' className='column'>
                     <div class="card">
-                        <img src={about_img1} alt="Jane"/>
+                        <img src={about_img4} alt="Jane"/>
                         <div class="about-content mt-4">
                             <h4>Olesia Tehlivets</h4>
                             <p class="title">Frontend Developer</p>
